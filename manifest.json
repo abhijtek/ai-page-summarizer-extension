@@ -1,0 +1,28 @@
+{
+  "manifest_version": 3,
+  "name": "AI Page Summarizer",
+  "description": "Summarizes a webpage into a heading and bullet points using AI",
+  "version": "1.0",
+  "permissions": ["scripting", "activeTab", "storage"],
+  "host_permissions": ["<all_urls>"],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "AI Page Summarizer"
+  },
+
+  
+  "icons": {
+    "16": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
+  
+
+
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ]
+}

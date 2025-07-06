@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>AI Page Summarizer</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <h1>AI Page Summarizer</h1>
+
+  <input type="text" id="apiKey" placeholder="Enter OpenRouter API Key" />
+  <select id="model">
+    <option value="anthropic/claude-3-haiku">Claude 3 Haiku (default)</option>
+    <option value="openai/gpt-3.5-turbo">GPT-3.5 Turbo</option>
+  </select>
+
+  <button id="summarize">Summarize Page</button>
+
+  <p style="font-size: 12px; margin-top: 10px;">
+    Need a key? <a href="https://openrouter.ai/keys" target="_blank">Get one here</a>
+  </p>
+
+  <script src="popup.js"></script>
+</body>
+</html>
